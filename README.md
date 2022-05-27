@@ -32,8 +32,8 @@ npm install ethereumjs-testrpc web3@0.20.1
 ```
 
 ### Installation
-1. Clone the repo from GitHub
-2. Run the following command to install all the dependencies for the project
+1. Clone the repository from GitHub
+2. Navigate to this repository and then run the following command to install all the dependencies for the project
 ```
 npm install
 ```
