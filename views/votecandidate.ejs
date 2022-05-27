@@ -1,0 +1,52 @@
+<% include header.ejs %>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1> Vote your candidate</h1>
+                <hr>
+                <strong>NAME:
+                </strong>
+                <p>
+                    <%= name.toUpperCase() %>
+                </p>
+                <strong>AADHAAR:
+                </strong>
+                <p>
+                    <%= aadhaar.toUpperCase() %>
+                </p>
+                <strong>CONSTITUENCY:
+                </strong>
+                <p>
+                    <%= constituency %>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Cast your Vote</h1>
+                        <hr>
+                        <hr>
+                        <p class="lead">
+                            <% for(var i=0; i< data.length; i++) { %>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="<%=data[i].name.split(' ')[0] %>" name="votecandidate" value="<%=data[i].name.split(' ')[0].toString() %>" class="custom-control-input">
+                                    <label class="custom-control-label" for="<%=data[i].name.split(' ')[0] %>">
+                                        <%=data[i].name %>
+                                    </label>
+                                </div>
+                                <hr>
+                                <% } %>
+
+                                    <div class="form-group">
+                                        <button id="vote_btn" class="btn btn-primary" onclick="javascript:voteForCandidate('<%= id%>');">Submit</button>
+                                    </div>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    </html>
