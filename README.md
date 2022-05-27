@@ -59,7 +59,7 @@ node
 ```
 npm start
 ```
-  This will deploy on the applicatin on localhost:3000
+  This will deploy the applicatin on localhost:3000
 
 8. You can now access the application by going to http://localhost:3000/ in the browser
 
