@@ -1,5 +1,5 @@
 # blockchain-elections
-A Decentralized Voting platform built on the ethereum blockchain which uses face recognition to authenticate voters
+A Decentralized Voting platform built on the Ethereum blockchain which uses face recognition to authenticate voters
 
 
 <img src="https://user-images.githubusercontent.com/76650090/170690698-a2ef7870-32fd-4123-beef-3011e3837a03.png" width="500" height="400">
@@ -51,7 +51,7 @@ node
 ```
   This will start the node console
 
-5. Go to ```deploy_script.js``` inside the ```blockchain``` directory. Copy line 1-16 from this file and paste it inside the node terminal. This will give the address of the deployed contract. Copy this address.
+5. Go to ```deploy_script.js``` inside the ```blockchain``` directory. Please make sure that the port on which the Blockchain was started in Step 3 matches with the port mentioned in line 2 of this file. Copy line 1-16 from this file and paste it inside the node terminal. This will give the address of the deployed contract. Copy this address.
 
 6. Go to ```blockchain.js``` within ```public > javascripts``` directory. In this file on line 7, replace the already existing address within ``VotingContract.at()`` and paste the new address which you had copied in Step 5. Save the file.
 
